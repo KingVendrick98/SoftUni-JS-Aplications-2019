@@ -14,22 +14,26 @@ function getInfo() {
         .then(res => res.json())
         .then(handleSuccess)
         .catch(handleError);
-    
-    function handleSuccess(data){
-        const {name, buses} = data;
+
+    function handleSuccess(data) {
+        const {
+            name,
+            buses
+        } = data;
         stopNameDiv.textContent = name;
 
         Object.entries(buses)
-        .forEach(([busId, busTime]) => {
-            const li = document.createElement("li");
-            li.textContent = `Bus ${busId} arrives in ${busTime} minutes.`;
+            .forEach(([busId, busTime]) => {
+                const li = document.createElement("li");
+                li.textContent = `Bus ${busId} arrives in ${busTime} minutes.`;
 
-            busesContainer.appendChild(li);
-        })
+                busesContainer.appendChild(li);
+            })
     }
 
-    function handleError(err){
+    function handleError(err) {
         stopNameDiv.textContent = "Error";
     }
-    
+
 }
+//some random text to see if is it working
