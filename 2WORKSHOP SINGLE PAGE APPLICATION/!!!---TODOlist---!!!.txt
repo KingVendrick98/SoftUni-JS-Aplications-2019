@@ -1,0 +1,5 @@
+1."npm install bootstrap --save";
+2."npm install sammy --save";
+3."npm install handlebars --save";
+4."npm install jquery --save";
+5."Inserting script in index.html file 'app.js' ";
