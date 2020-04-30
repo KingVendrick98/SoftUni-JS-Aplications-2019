@@ -4,7 +4,7 @@
   "description": "nqma",
   "main": "index.js",
   "dependencies": {
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "handlebars": "^4.5.3",
     "sammy": "^0.7.6",
     "bootstrap": "^4.4.1"
